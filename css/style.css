@@ -102,7 +102,7 @@ div.container {
   padding: 0;
   margin: 0;
 }
-.flexbox{
+.flexbox {
   display: flex;
 }
 /* あいさつタイトル */
@@ -197,12 +197,14 @@ span.text-large {
 section.teacher {
   background-color: #474a49;
 }
-.teacher-wrapper{
-  width: 100%;
+.teacher-wrapper {
+  width: 80%;
   height: auto;
+  margin: 0 auto;
+  justify-content: center;
 }
 .teacher-left,
-.teacher-right{
-  width: 40%;
-  height: auto;
+.teacher-right {
+  width: 500px;
+  height: 500px;
 }
