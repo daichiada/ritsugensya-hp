@@ -11,3 +11,198 @@ Table of content
 8. ナビゲーション
 9. フッター
 ------------------------------------------------------*/
+
+/*----------------------------------------
+1. 共通のスタイル
+----------------------------------------*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "ten-mincho", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-feature-settings: "ss02";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  background-color: #787d7b;
+  color: #fafafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+p {
+  font-size: 18px;
+  line-height: 26px;
+}
+b,
+strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+section {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+div.container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.flexbox{
+  display: flex;
+}
+/* あいさつタイトル */
+h2,
+p {
+  width: auto;
+  height: auto;
+  margin: 100px 250px;
+}
+/*----------------------------------------
+2.トップページ
+----------------------------------------*/
+/* ビデオ */
+.video-wrapper-pc {
+  position: relative;
+}
+video.top-video {
+  width: 100%;
+  height: 100%;
+}
+/* 立玄社タイトル */
+.top-title {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+h1.top-title {
+  writing-mode: vertical-rl;
+  font-size: 80px;
+  letter-spacing: 40px;
+}
+/* ハンバーガーボタン */
+nav.hamburger {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 5%;
+  left: 90%;
+}
+.hamburger-btn-box {
+  font-size: 70px;
+}
+/* 生徒の方へ */
+.btn-student-box {
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  width: auto;
+  height: auto;
+  writing-mode: vertical-rl;
+  background-color: #474a49;
+  border-radius: 20px;
+  padding: 20px;
+}
+.btn-student-box a {
+  font-size: 35px;
+  padding: 20px;
+  letter-spacing: 10px;
+}
+/*----------------------------------------
+3.　ごあいさつ
+----------------------------------------*/
+
+/* あいさつ用写真 */
+.greeting-pic {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../img/greeting-pic.jpg);
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+/* あいさつテキスト */
+.greeting-txt {
+  width: auto;
+  height: auto;
+  margin-bottom: 100px;
+  text-align: justify;
+}
+
+span.text-large {
+  font-size: 30px;
+}
+/*----------------------------------------
+4.　立玄社の指導者
+----------------------------------------*/
+section.teacher {
+  background-color: #474a49;
+}
+.teacher-wrapper{
+  width: 100%;
+  height: auto;
+}
+.teacher-left,
+.teacher-right{
+  width: 40%;
+  height: auto;
+}

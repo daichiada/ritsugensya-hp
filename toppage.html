@@ -8,14 +8,31 @@
     <title>立玄社のホームページ</title>
     <meta name="description" content="立玄社のホームページ" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="./img/ritslogo.jpeg" />
+
+    <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/a379e55c4d.js" crossorigin="anonymous"></script>
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+    <!-- 貂明朝フォント設定 -->
+    <script>
+      (function (d) {
+        var config = {
+          kitId: 'tpv5xvr',
+          scriptTimeout: 3000,
+          async: true
+        },
+          h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      })(document);
+    </script>
+
   </head>
   <body>
     <!------------------- トップページ --------------------->
-    <section class="top">
+    <section class="top" id="top">
       <div class="container">
         <!-- ビデオ -->
         <div class="video-wrapper-pc">
@@ -31,32 +48,38 @@
         <!-- 立玄社のタイトル終了 -->
 
         <!-- ハンバーガーボタン -->
-        <button class="hamburger"></button>
+        <nav class="hamburger">
+          <div class="hamburger-btn-box">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
         <!-- ハンバーガーボタン終了 -->
 
         <!-- 生徒の方へ -->
-        <a href="#" class="btn-student">生徒の方へ</a>
+        <a href="#" class="btn-student">
+          <div class="btn-student-box">
+            <a href="#">生徒の方へ</a>
+          </div>
+        </a>
         <!-- 生徒の方へ終了 -->
       </div>
     </section>
     <!------------------- トップページ終了 --------------------->
 
-    <!------------------- あいさつ --------------------->
-    <section class="greeting">
+    <!------------------- ごあいさつ --------------------->
+    <section class="greeting" id="greeting">
       <div class="container">
         <!-- ごあいさつ -->
         <h2 class="section-title">ごあいさつ</h2>
         <!-- ごあいさつ終了 -->
 
         <!-- あいさつ用写真 -->
-        <div class="greeting-pic">
-          <img src="#" alt="" />
-        </div>
+        <div class="greeting-pic"></div>
         <!-- あいさつ用写真終了 -->
 
         <!-- あいさつテキスト -->
         <div class="greeting-txt">
-          <p class="greeting-message">立玄社とは、親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。</p>
+          <p class="greeting-message"><span class="text-large">立玄社</span>とは、親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。弱虫やそこから飛び降りる事は出来まい。</p>
         </div>
         <!-- あいさつテキスト -->
       </div>
@@ -64,17 +87,18 @@
     <!------------------- あいさつ終了 --------------------->
 
     <!------------------- 立玄社の指導者 --------------------->
-    <section class="teacher">
+    <section class="teacher" id="teacher">
       <div class="container">
         <!-- 立玄社の指導者　タイトル -->
         <h2 class="section-title">立玄社の指導者</h2>
         <!-- 立玄社の指導者　タイトル 終了-->
 
         <!-- 指導者の写真 -->
-        <div class="teacher-wrapper">
+        <div class="teacher-wrapper flexbox">
 
           <!-- 指導者左 -->
           <div class="teacher-left">
+            <img src="./img/teacher-yuho.jpeg" alt="川口雄峰先生">
             <div class="teacher-name">
               <p class="teacher-name-txt"></p>
             </div>
@@ -82,6 +106,7 @@
 
           <!-- 指導者右 -->
           <div class="teacher-right">
+            <img src="./img/teacher-seiren.jpg" alt="川口青蓮先生">
             <div class="teacher-name">
               <p class="teacher-name-txt"></p>
             </div>
@@ -95,7 +120,7 @@
     <!------------------- 立玄社の指導者 終了--------------------->
 
     <!------------------- 生徒の方へおしらせ--------------------->
-    <section class="info">
+    <section class="info" id="info">
       <div class="container">
 
         <!-- 生徒の方へお知らせ　タイトル -->
@@ -104,7 +129,10 @@
 
         <!-- お知らせ内容・詳細 -->
         <div class="info-txt-wrapper">
-          <p class="info-message">2020.4.8　　新型コロナウィルス感染拡大による緊急事態宣言に伴い、東京KITTE丸の内店を臨時休業いたします</p>
+          <a class="info-message">2020.4.8　　新型コロナウィルス感染拡大による緊急事態宣言に伴い、東京KITTE丸の内店を臨時休業いたします</a><br>
+          <a class="info-message">2020.4.8　　新型コロナウィルス感染拡大による緊急事態宣言に伴い、東京KITTE丸の内店を臨時休業いたします</a><br>
+          <a class="info-message">2020.4.8　　新型コロナウィルス感染拡大による緊急事態宣言に伴い、東京KITTE丸の内店を臨時休業いたします</a><br>
+          <a class="info-message">2020.4.8　　新型コロナウィルス感染拡大による緊急事態宣言に伴い、東京KITTE丸の内店を臨時休業いたします</a>
           <!-- スケジュール -->
           <a href="#" class="info-detail">スケジュール</a>
           <!-- スケジュール 終了-->
@@ -127,7 +155,7 @@
     <!-- 教室のご案内　タイトル -->
     <h2 class="section-title"></h2>
     <!-- 教室のご案内　タイトル 終了-->
-    
+
      <!-- 教室紹介　詳細 -->
     <div class="classroom-wrapper">
 
@@ -151,9 +179,9 @@
 
         </div>
         <!-- マップ横の文章 終了-->
-     
+
        </div>
-       <!-- 立玄社　飛鳥台教室 終了--> 
+       <!-- 立玄社　飛鳥台教室 終了-->
 
 
       <!-- 立玄社　弥富教室 -->
@@ -161,7 +189,7 @@
 
         <!-- マップ横の文書-->
         <div class="classroom-txt">
-          
+
           <!-- 弥富教室名 -->
           <h2 class="classroom-name"></h2>
           <!-- 弥富教室名　終了 -->
@@ -172,29 +200,29 @@
 
         </div>
         <!-- マップ横の文書　終了-->
-        
+
         <!-- マップの写真 -->
         <div class="classroom-map"></div>
         <!-- マップの写真　終了-->
 
       </div>
       <!-- 立玄社　弥富教室 終了-->
-    
+
     </div>
     <!-- 教室紹介　詳細 終了-->
 
  　 </div>
 　　</section>
 　　<!------------------- 教室のご案内　終了--------------------->
-   
+
 　　<!------------------- お問い合わせ--------------------->
    <section class="inquiry">
    <div class="container">
        <!-- お問い合わせ　タイトル -->
         <h2 class="section-title"></h2>
-　　    <!-- お問い合わせ　タイトル END->
+　　    <!-- お問い合わせ　タイトル END -->
 
-            <!-- 問い合わせ　入力欄 -->
+             <!-- 問い合わせ　入力欄 -->
             <div class="contact-wrapper">
 
               <!-- 質問やご相談がある方は...　説明 -->
@@ -204,7 +232,7 @@
               <!-- //////////入力項目＞表示名＞入力欄 ///////////////-->
               <!-- お名前　入力項目 -->
               <div class="contact-name-item">
-                
+
                 <!-- お名前 表示名-->
                 <p class="contact-name"></p>
                 <!-- お名前 表示名　END-->
@@ -219,7 +247,7 @@
 
               <!-- メールアドレス　入力項目 -->
               <div class="contact-email-item">
-                
+
                 <!-- メールアドレス 表示名-->
                 <p class="contact-email"></p>
                 <!-- メールアドレス 表示名　END-->
@@ -235,7 +263,7 @@
 
               <!-- お問い合わせ内容詳細　入力項目 -->
               <div class="contact-detail-item">
-                
+
                 <!-- お問い合わせ内容詳細 表示名-->
                 <p class="contact-detail"></p>
                 <!-- お問い合わせ内容詳細 表示名　END-->
@@ -248,7 +276,7 @@
               <!-- お問い合わせ内容詳細　入力項目 END -->
 
 
-            </div>        
+            </div>
             <!-- 問い合わせ　入力欄 END -->
   </div>
    </section>
